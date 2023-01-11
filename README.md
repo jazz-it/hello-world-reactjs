@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# create-react-app with pnpm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`pnpm`: Fast, disk space efficient package manager
+
+```
+npm install -g pnpm
+pnpm create react-app APP_NAME --template typescript
+cd APP_NAME/
+# Delete node_modules and package-lock.json
+rm -rf node_modules package-lock.json
+pnpm install
+# Create a file .npmrc and add: `auto-install-peers=true`
+echo "auto-install-peers=true" >> .npmrc
+# Delete node_modules
+rm -rf node_modules
+pnpm install
+pnpm install --save-dev @types/testing-library__jest-dom
+pnpm start
+```
 
 ## Available Scripts
 
