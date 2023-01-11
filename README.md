@@ -3,7 +3,7 @@
 `pnpm`: Fast, disk space efficient package manager
 
 ```
-npm install -g pnpm
+nvm exec npm i -g pnpm
 pnpm create react-app APP_NAME --template typescript
 cd APP_NAME/
 # Delete node_modules and package-lock.json
